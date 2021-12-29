@@ -13,7 +13,7 @@ const Header = () => {
                         <div className="logo">
                             <h1 className="capitalize">Electro</h1>
                         </div>
-                        <ul className="d-flex align-items-center justify-content-center list-style-none">
+                        <ul className="d-flex align-items-center justify-content-evenly list-style-none">
                             <li>
                                 <input type="search" placeholder="select location" required />
                                 <button>search</button>

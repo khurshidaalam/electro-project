@@ -9,7 +9,13 @@ body{
 }
 ul{
   list-style: none;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 p{
   margin-bottom: 0;
+}
+a{
+  text-decoration: none !important;
+  color: inherit !important;
 }

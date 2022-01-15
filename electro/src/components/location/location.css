@@ -26,8 +26,19 @@
 }
 .active-pointer{
     font-size: 40px !important;
-    color: black;
+    color: darkred;
     position: relative;
+}
+.active-ppl-info-div::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    left: -7px;
+    top: 10px;
+    transform: rotate(
+45deg);
 }
 .pointer-icon{
     position: relative;
@@ -37,7 +48,7 @@
 .pointer-icon::before {
     position: absolute;
     content: " ";
-    border: 1px solid green;
+    border: 1px solid darkred;
     border-radius: 50%;
     bottom: 0;
     left: 7px;
@@ -94,4 +105,50 @@
 }
 .person-details, .persons-status{
     text-align: left;
+}
+.persons-status {
+    position: relative;
+}
+button.call-now {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #ce474a;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    text-transform: capitalize;
+    padding: 2px 5px;
+}
+.cross-profile-icon {
+    position: absolute;
+    right: 20px;
+    color: darkred;
+}
+.call-now-icon{
+    font-size: 18px !important;
+    margin-right: 2px;
+    animation-name: ring;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    color: fff;
+    
+}
+@keyframes ring{
+    0%{
+        transform: rotate(10deg);
+    }
+    5%{
+        transform: rotate(-10deg);
+    }
+    10%{
+        transform: rotate(10deg);
+    }
+    15%{
+        transform: rotate(0deg);
+    }
+}
+.profile-div-icons{
+    font-size: 18px !important;
+    color: gray;
 }

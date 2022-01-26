@@ -5,7 +5,7 @@ import BadgeIcon from '@mui/icons-material/Badge';
 import MarkEmailReadIcon from '@mui/icons-material/MarkEmailRead';
 import PersonIcon from '@mui/icons-material/Person';
 
-const PersonProfile = () => {
+const PersonProfile = ({ setView}) => {
     return (
         <>
             <div className='active-ppl-info-div '>
@@ -22,7 +22,7 @@ const PersonProfile = () => {
                                         </ul>
 
                                     </div>
-                                    <CloseRoundedIcon  className="cross-profile-icon"/>
+                                    <CloseRoundedIcon  className="cross-profile-icon" onClick={()=>{setView(false)}}/>
                                 </div>
                                 <div className='persons-status text-left mt-2'>
                                     <ul> 

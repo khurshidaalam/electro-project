@@ -150,5 +150,11 @@ button.call-now {
 }
 .profile-div-icons{
     font-size: 18px !important;
-    color: gray;
+    color: #800000;
+}
+
+@media (max-width:900px) {
+    .mb-300{
+        margin-bottom: 800px;
+    }
 }

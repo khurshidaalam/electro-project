@@ -1,5 +1,9 @@
 import React from 'react';
 import "./layout.css";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 
 const Footer = () => {
     return (
@@ -8,8 +12,8 @@ const Footer = () => {
                 <div className='container'>
                     <div className='footer-content'>
                         <div className='row'>
-                            <div className='col-4'>
-                                <ul>
+                            <div className='col-12 col-md-6 col-lg-4'>
+                                <ul className='footer-top-list'>
                                     <li>
                                         <h3>contact us</h3>
                                     </li>
@@ -18,30 +22,34 @@ const Footer = () => {
                                     <li><a href="">mailtoelectro@gmail.com</a></li>
                                 </ul>
                             </div>
-                            <div className='col-4'>
-                                <ul>
+                            <div className='col-12 col-md-6 col-lg-4'>
+                                <ul className='footer-top-list'>
                                     <li>
                                         <h3>find us</h3>
                                     </li>
                                     <li>uttara, dhaka, bangladesh</li>
                                 </ul>
-                                <ul>
+                                <ul className='footer-top-list mt-3'>
                                     <li>
                                         <h3>career</h3>
                                     </li>
-                                    <li><p>Looking for a job opportunity?</p>
-                                       <a href=''>careeratelectro@gmail.com</a></li>
+                                    <li><p className='mb-0'>Looking for a job opportunity?</p>
+                                        <a href=''>careeratelectro@gmail.com</a></li>
                                 </ul>
                             </div>
-                            <div className='col-4'>
-                                <ul>
+                            <div className='col-12 col-md-6 col-lg-4'>
+                                <ul className='footer-top-list'>
                                     <li>
                                         <h3>follow us</h3>
                                     </li>
-                                    <li><a href=''>fb</a></li>
-                                    <li><a href=''>insta</a></li>
-                                    <li><a href=''>in</a></li>
-                                    <li><a href=''>tw</a></li>
+                                    <li>
+                                        <ul className='d-flex'>
+                                            <li><a href=''><FacebookOutlinedIcon className='social-icons' /></a></li>
+                                            <li><a href=''><InstagramIcon className='social-icons' /></a></li>
+                                            <li><a href=''><LinkedInIcon className='social-icons' /></a></li>
+                                            <li><a href=''><TwitterIcon className='social-icons' /></a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </div>
                         </div>

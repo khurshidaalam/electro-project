@@ -12,7 +12,7 @@ const Header = () => {
     const searchonclick = () => {
         const sinput = document.querySelector(".search-input");
         const callsearch = document.querySelector(".search-upper-text");
-    
+
         sinput.classList.add("showinput");
         callsearch.classList.add("op-zero");
     }
@@ -28,15 +28,23 @@ const Header = () => {
                         <div className="search-box">
                             <div className="search-btn">
                                 <div className="search-input">
-                                    <input type="search" placeholder="select location" required />
-                                    <button className="searchbtn">search</button>
+                                    <div className="searchinput-divs">
+                                        <input type="search" placeholder="select location" required />
+                                        <button className="searchbtn">search</button>
+                                    </div>
+
+                                    <div className="shipping-add searchinput-divs">
+                                        <input type="search" placeholder="select shipping location" required />
+                                        <button className="searchbtn">search</button>
+                                    </div>
+
                                 </div>
                                 <p className="search-upper-text" onClick={searchonclick}>search location</p>
                             </div>
                         </div>
-                        <ul className="d-flex align-items-center justify-content-evenly list-style-none">
-                            <li><CircleNotificationsIcon /></li>
-                            <li><AccountCircleIcon /></li>
+                        <ul className="top-nav-right-icons ">
+                            <li><CircleNotificationsIcon className="notification-icon top-nav-icons" /></li>
+                            <li><AccountCircleIcon className="user-icon top-nav-icons" /></li>
                         </ul>
                     </div>
                 </div>

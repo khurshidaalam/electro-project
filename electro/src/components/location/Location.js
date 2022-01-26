@@ -21,7 +21,7 @@ const Location = () => {
     return (
         <>
             <div className='location-select mb-300'>
-                <img src="./images/ssdmap.png" alt="dhaka" />
+                <img src="../../images/ssdmap.png" alt="dhaka" />
                 
                 <div className='active-ppl'>
                     <div className='active-icon'>

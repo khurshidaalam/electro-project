@@ -1,20 +1,30 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Header,Footer,Location,Homepage } from "./components";
+import { Homepage,Layout } from "./components";
 import "./App.css";
 
-
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 const App =() =>{
   return(
-    <>
-  <Header/>
-  {/* <Location/> */}
-  <Homepage/>
-  <Footer/>
-  </>
-  )
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <div className="app">
+            <Layout>
+            <Homepage/>
+            </Layout>
+          </div>
+        </Route>
+      </Switch>
+    </Router>
+  );
   
-}
+};
 
 export default App;

@@ -7,5 +7,14 @@
     background-size: contain;
     z-index: 12;
     margin-bottom: 250px;
-    margin-top: 60px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.form-div{
+    padding: 30px;
+    background: linear-gradient(toleft black, white);
+    width: 100%;
+    height: 100%;
+
 }

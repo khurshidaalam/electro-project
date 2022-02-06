@@ -1,5 +1,6 @@
 import React from 'react';
 import "./home.css";
+import TextField from '@mui/material/TextField';
 
 const HomePage = () => {
     return (
@@ -13,6 +14,12 @@ const HomePage = () => {
                         </div>
                         </div>
                         <div className='col-md-6 col-12'>
+                        <div className='form-div '>
+                        <form>
+                        <TextField id="outlined-basic" label="Outlined" variant="outlined" />
+                        </form>
+                        </div>
+                        
                         </div>
                     </div>
                 </div>

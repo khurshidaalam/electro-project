@@ -8,7 +8,7 @@ import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 const Footer = () => {
     return (
         <>
-            <div className="footer">
+            <div className="footer zindex-10">
                 <div className='container'>
                     <div className='footer-content'>
                         <div className='row'>

@@ -1,17 +1,19 @@
 import React from "react";
-
+import Header from "../layout/Header";
+import  Footer  from "../layout/Footer";
 
 
 const Layout = props =>{
   return(
     <>
-  <Header/>
+  <Header />
+  <div className="zindex-11">
   {props.children}
-  
-  <Footer/>
+  </div>
+  <Footer />
   </>
   )
   
 }
 
-export default App;
+export default Layout;

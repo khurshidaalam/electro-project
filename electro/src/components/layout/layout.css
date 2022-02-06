@@ -96,3 +96,13 @@
 .social-icons{
     margin-right: 15px;
 }
+.zindex-10{
+    z-index: 10;
+}
+.zindex-12{
+    z-index: 12;
+}
+.zindex-11{
+    z-index: 11;
+    position: sticky;
+}

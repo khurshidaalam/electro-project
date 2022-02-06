@@ -19,7 +19,7 @@ const Header = () => {
 
     return (
         <>
-            <div className="main-nav-div bg-dark text-white fixed">
+            <div className="main-nav-div bg-dark text-white fixed zindex-12">
                 <div class="container">
                     <div className="main-nav d-flex justify-content-between align-items-center" >
                         <div className="logo">

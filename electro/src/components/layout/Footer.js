@@ -1,14 +1,15 @@
-import React from 'react';
+import React  from 'react';
 import "./layout.css";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 
-const Footer = () => {
+const Footer = ({componentRef}) => {
+    
     return (
         <>
-            <div className="footer zindex-10">
+            <div className="footer zindex-10" ref={componentRef}>
                 <div className='container'>
                     <div className='footer-content'>
                         <div className='row'>

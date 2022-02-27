@@ -2,9 +2,9 @@
     width: 100%;
     height: 100vh;
     background: #b5ac95 url(../../images/iconbg.jpg);
-    background-position: left;
+    background-position-y: -130px;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     z-index: 12;
     margin-top: 70px;
     display: flex;
@@ -12,8 +12,23 @@
 }
 .form-div{
     padding: 30px;
-    background: linear-gradient(toleft black, white);
+    
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px; 
+    background-color: rgba(255, 255, 255, 0.226);
+    border-radius: 5px;
+}
+.login-form .login-data-input{
+    margin-bottom: 20px;
 }

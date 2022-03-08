@@ -5,6 +5,7 @@ import { Container } from '@mui/material';
 import CircleNotificationsIcon from '@mui/icons-material/CircleNotifications';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
+import { Link } from "react-router-dom";
 
 
 const Header = () => {
@@ -44,7 +45,7 @@ const Header = () => {
                         </div>
                         <ul className="top-nav-right-icons ">
                             <li><CircleNotificationsIcon className="notification-icon top-nav-icons" /></li>
-                            <li><AccountCircleIcon className="user-icon top-nav-icons" /></li>
+                            <li><Link to="/Cprofile"><AccountCircleIcon className="user-icon top-nav-icons" /></Link></li>
                         </ul>
                     </div>
                 </div>

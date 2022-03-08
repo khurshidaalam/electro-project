@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./home.css";
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import Link from '@mui/material/Link';
+import { useNavigate } from "react-router-dom";
+import {Navigate} from "react-router-dom";
+
 
 const HomePage = () => {
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState();
 
-    
+const navigate = useNavigate();
+
+const  loginUser = (e)=>{
+    e.preventDefault();
+        (username === "setu" && password === `12345`) ? navigate("/home"): alert("username and password is not correct")
+       
+}
+   
 
     return (
         <>
@@ -21,13 +32,14 @@ const HomePage = () => {
                         <div className='col-md-6 col-12'>
                         <div className='form-div '>
                         <form className='login-form'>
-                        <TextField className='login-data-input' id="outlined-basic" label="username" variant="outlined" onChange={HandleChange()}/>
-                        <TextField className='login-data-input' id="outlined-basic" label="password" variant="outlined" onChange={HandleChange()}/>
+                        <TextField className='login-data-input' id="outlined-basic" label="username" variant="outlined" value={username} onChange={(uname)=> setUsername(uname.target.value)} />
+
+                        <TextField style={{borderColor:`#c9312c`}}  className='login-data-input' id="outlined-basic" label="password" variant="outlined" onChange={(pword)=> setPassword(pword.target.value)} value={password}/>
                         <div className='login-btn'>
-                            <Button variant="contained" >login</Button>
+                            <Button style={{backgroundColor:`#c9312c`}} variant="contained" onClick={loginUser}>login</Button>
                         </div>
                         <div className='to-register-div mt-3'>
-                            <p>if you don't have account, <Link to="/">Register now</Link> </p>
+                            <p>if you don't have account, <a to="/">Register now</a> </p>
                         </div>
                         </form>
                         </div>

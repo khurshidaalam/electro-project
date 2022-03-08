@@ -4,6 +4,7 @@ import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import BadgeIcon from '@mui/icons-material/Badge';
 import MarkEmailReadIcon from '@mui/icons-material/MarkEmailRead';
 import PersonIcon from '@mui/icons-material/Person';
+import personimage from "../../images/Portrait_3.jpg";
 
 const PersonProfile = ({ setView}) => {
     return (
@@ -11,7 +12,7 @@ const PersonProfile = ({ setView}) => {
             <div className='active-ppl-info-div '>
                                 <div className='personal-info d-flex'>
                                     <div className='person-img mr-2'>
-                                        <img src="/images/Portrait_3.jpg" alt="hgj" />
+                                        <img src={personimage} alt="hgj" />
                                     </div>
                                     <div className='person-details'>
                                         <ul >

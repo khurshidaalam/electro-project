@@ -24,7 +24,8 @@ const Header = () => {
                 <div class="container">
                     <div className="main-nav d-flex justify-content-between align-items-center" >
                         <div className="logo">
-                            <h1 className="capitalize">Electro</h1>
+                        <Link to="/home">                            <h1 className="capitalize">Electro</h1>
+</Link>
                         </div>
                         <div className="search-box">
                             <div className="search-btn">

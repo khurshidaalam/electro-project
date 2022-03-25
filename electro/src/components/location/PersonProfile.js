@@ -33,6 +33,8 @@ const PersonProfile = ({ setView}) => {
                                     </ul>
                                     <button class="call-now"><a href="callto:014563244789"><CallRoundedIcon className="call-now-icon"/>
                                     call now</a></button>
+                                    <button class="confirm-btn"><a href="callto:014563244789">
+                                    confirm</a></button>
                                 </div>
                             </div>
        </>

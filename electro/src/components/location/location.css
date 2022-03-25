@@ -109,6 +109,15 @@
 .persons-status {
     position: relative;
 }
+.confirm-btn{
+    background-color: #458f01;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    text-transform: capitalize;
+    padding: 2px 5px;
+    margin-top: 10px;
+}
 button.call-now {
     position: absolute;
     bottom: 0;

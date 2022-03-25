@@ -6,6 +6,8 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import TotalOrders from "./TotalOrders";
+import Profile from "./Profile";
+import RcvorderList from "../receiver/ReceiverOrderList"
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -57,16 +59,20 @@ const CarrierDashboard = () => {
           <Tab label="Profile" {...a11yProps(0)} />
           <Tab label="total orders" {...a11yProps(1)} />
           <Tab label="completed order" {...a11yProps(2)} />
+          <Tab label="order info" {...a11yProps(3)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        Profile
+        <Profile/>
       </TabPanel>
       <TabPanel value={value} index={1}>
         <TotalOrders/>
       </TabPanel>
       <TabPanel value={value} index={2}>
         completed order
+      </TabPanel>
+      <TabPanel value={value} index={3}>
+        <RcvorderList/>
       </TabPanel>
     </Box>
     </div>

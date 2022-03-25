@@ -4,6 +4,14 @@
     position: relative;
     display: flex;
     margin-top: 70px;
+    background-color: black;
+    color: white;
+}
+.carrier-dashboard-main .css-1h9z7r5-MuiButtonBase-root-MuiTab-root{
+    color: white !important;
+}
+.carrier-dashboard-main .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected{
+    color: #1976d2 !important;
 }
 .c-dashboard-sidebar{
     width: 250px;

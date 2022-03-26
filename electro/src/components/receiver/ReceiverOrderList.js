@@ -6,9 +6,11 @@ import StepLabel from '@mui/material/StepLabel';
 import "./rcv.css";
 
 const steps = [
-        'Select master blaster campaign settings',
-        'Create an ad group',
-        'Create an ad',
+        'confirmed',
+        'picked',
+        'on the way',
+        'door step',
+        'delivered'
       ];
 
 const ReceiverOrderList = () => {

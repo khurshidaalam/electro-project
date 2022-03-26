@@ -4,6 +4,7 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import { useNavigate } from "react-router-dom";
 import {Navigate} from "react-router-dom";
+import Footer from "../layout/Footer";
 
 
 const HomePage = () => {
@@ -21,6 +22,7 @@ const  loginUser = (e)=>{
 
     return (
         <>
+        <div className='loginpage'>
             <div className='home-login-div'>
                 <div className='container'>
                     <div className='row'>
@@ -47,6 +49,10 @@ const  loginUser = (e)=>{
                         </div>
                     </div>
                 </div>
+                
+            </div>
+
+            <Footer className="login-footer"/>
             </div>
         </>
     )

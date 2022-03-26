@@ -14,7 +14,7 @@ const Layout = props =>{
     })
   return(
     <>
-  <Header />
+  <Header/>
   <div className="zindex-11 main_content" >
   {props.children}
   </div>

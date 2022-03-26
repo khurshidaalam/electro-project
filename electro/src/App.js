@@ -1,18 +1,17 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Homepage, Layout, Location, CarrierDashboard } from "./components";
+import { Login, Layout, Location, CarrierDashboard } from "./components";
 import "./App.css";
 
 import {BrowserRouter as Router, Routes,Route,Link} from "react-router-dom";
 
-const App =() =>{
+const App =(props) =>{
+
   return(
     <Router>
       <Routes>
         <Route exact path="/" element={
-            <Layout className="layout-opct">
-            <Homepage/>
-            </Layout>
+            <Login/>
             }
         />
         <Route exact path="/home" element={

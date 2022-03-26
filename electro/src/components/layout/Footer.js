@@ -9,7 +9,7 @@ const Footer = ({componentRef}) => {
     
     return (
         <>
-            <div className="footer zindex-10" ref={componentRef}>
+            <div className="footer insidefooter zindex-10" ref={componentRef}>
                 <div className='container'>
                     <div className='footer-content'>
                         <div className='row'>

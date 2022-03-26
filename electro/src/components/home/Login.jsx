@@ -52,7 +52,7 @@ const  loginUser = (e)=>{
                 
             </div>
 
-            <Footer className="login-footer"/>
+            <Footer />
             </div>
         </>
     )

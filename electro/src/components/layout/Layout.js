@@ -18,7 +18,7 @@ const Layout = props =>{
   <div className="zindex-11 main_content" >
   {props.children}
   </div>
-  <Footer className="footerheight" componentRef ={componentRef}/>
+  <Footer componentRef ={componentRef}/>
   </>
   )
   

@@ -6,6 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 12;
+    position: relative;
     /* margin-top: 70px; */
     display: flex;
     justify-content: space-between;
@@ -30,7 +31,4 @@
 }
 .login-form .login-data-input{
     margin-bottom: 20px;
-}
-.loginpage .login-footer{
-    position: relative !important;
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useLayoutEffect} from 'react';
 import "./home.css";
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
@@ -7,7 +7,7 @@ import {Navigate} from "react-router-dom";
 import Footer from "../layout/Footer";
 
 
-const HomePage = () => {
+const Login = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState();
 
@@ -18,12 +18,19 @@ const  loginUser = (e)=>{
         (username === "setu" && password === `12345`) ? navigate("/home"): alert("username and password is not correct")
        
 }
-   
+
+const componentRef = useRef()
+    useLayoutEffect(()=> {
+        console.log(componentRef.current.clientHeight)
+        const fheight = componentRef.current.clientHeight;
+        const maincontent = document.querySelector('.main_content');
+        maincontent.style.marginBottom = `${fheight}px`;
+    })
 
     return (
         <>
         <div className='loginpage'>
-            <div className='home-login-div'>
+            <div className='home-login-div main_content'>
                 <div className='container'>
                     <div className='row'>
                         <div className='col-md-6 col-12'>
@@ -51,10 +58,11 @@ const  loginUser = (e)=>{
                 </div>
                 
             </div>
+     <Footer componentRef ={componentRef}/>
 
-            <Footer />
+           
             </div>
         </>
     )
 }
-export default HomePage;
+export default Login;

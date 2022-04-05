@@ -62,7 +62,7 @@ const ReceiverOrderList = () => {
       <div className='voew-order-details-modal'>
           <div>
               <h1>order id : #1235 </h1>
-              <Box sx={{ width: '100%', color: 'white' }}>
+              <Box sx={{ width: '100%', color: 'black' }}>
       <Stepper activeStep={1} alternativeLabel>
         {steps.map((label) => (
           <Step key={label}>

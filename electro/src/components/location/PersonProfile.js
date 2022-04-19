@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import CallRoundedIcon from '@mui/icons-material/CallRounded';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import BadgeIcon from '@mui/icons-material/Badge';
@@ -7,6 +7,9 @@ import PersonIcon from '@mui/icons-material/Person';
 import personimage from "../../images/Portrait_3.jpg";
 
 const PersonProfile = ({ setView}) => {
+const [confirm, setConfirm] = useState("confirm");
+   
+
     return (
         <>
             <div className='active-ppl-info-div '>
@@ -33,8 +36,8 @@ const PersonProfile = ({ setView}) => {
                                     </ul>
                                     <button class="call-now"><a href="callto:014563244789"><CallRoundedIcon className="call-now-icon"/>
                                     call now</a></button>
-                                    <button class="confirm-btn"><a href="callto:014563244789">
-                                    confirm</a></button>
+                                    <button class="confirm-btn" onClick={(e)=>setConfirm("confirmed")}>
+                                    {confirm}</button>
                                 </div>
                             </div>
        </>

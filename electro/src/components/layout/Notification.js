@@ -1,9 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import "./layout.css";
 
 const Notification = () => {
     return (
-        <div>
+        <div className='notification-area-div'>
             <ul>
                 <li>
                     <Link to="/">

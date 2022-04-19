@@ -1,9 +1,10 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Login, Layout, Location, CarrierDashboard } from "./components";
+import { Login, Layout, Location, CarrierDashboard,Notification,Header } from "./components";
 import "./App.css";
 
 import {BrowserRouter as Router, Routes,Route,Link} from "react-router-dom";
+
 
 const App =(props) =>{
 
@@ -26,6 +27,7 @@ const App =(props) =>{
             </Layout>
             }
         />
+       
       </Routes>
     </Router>
   );

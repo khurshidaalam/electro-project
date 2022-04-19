@@ -3,6 +3,7 @@ import "./location.css";
 import ManIcon from '@mui/icons-material/Man';
 import PersonProfile from "./PersonProfile";
 
+
 import mapimage from "../../images/ssdmap.png";
 // const profilDiv = document.querySelector(".active-ppl-info-div");
 
@@ -31,6 +32,7 @@ const Location = () => {
                         </div>
                     </div>
                 </div>
+                
             </div>
         </>
     )
